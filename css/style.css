@@ -8,6 +8,7 @@
   --clr-subscribe: #FFF;
 
   --bg-subscribe-btn:#DC2626;
+  --bg-search-btn: #FAFAFA;
 
   /* ============
      Typography 
@@ -121,3 +122,49 @@ svg {
    =========
 */
 
+/*! Typography  */
+.heading-1{
+  color: var(--clr-heading);
+  font-size: var(--fs-heading-primary);
+  font-weight: var(--fw-medium);
+}
+.heading-2{
+  color: var(--clr-heading);
+  font-size: var(--fs-heading-secondary);
+  font-weight: var(--fw-medium);
+}
+.heading-3{
+  color: var(--clr-heading);
+  font-size: var(--fs-heading-secondary);
+  font-weight: var(--fw-medium);
+}
+
+.par-black {
+  color: var(--clr-paragraph-primary);
+  font-size: var(--fs-paragraph-primary);
+  font-weight: var(--fw-regular);
+}
+.par-grey {
+  color: var(--clr-paragraph-secondary);
+  font-size: var(--fs-paragraph-secondary);
+  font-weight: var(--fw-regular);
+}
+
+.txt-subscribe {
+  color: var(--clr-subscribe);
+  font-size: var(--fs-paragraph-primary);
+  font-weight: var(--fw-medium);
+}
+.txt.link {
+  color: var(--clr-link);
+  font-size: var(--fs-link);
+  font-weight: var(--fw-medium);
+}
+
+/*! Buttons */
+.subscribe-btn {
+  background: var(--bg-subscribe-btn);
+}
+.search-btn {
+  background: var(--bg-search-btn);
+}
