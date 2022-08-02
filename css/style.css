@@ -4,7 +4,6 @@
   --clr-gray-200: #E4E4E7;
   --clr-gray-500: #71717a;
   --clr-trueGray-500 : #737373;
-  --clr-coolGray-500: #6b7280;
   --clr-gray-900: #18181b;
   --clr-subscribe: #FFF;
 
@@ -15,8 +14,9 @@
      ============
   */
 
-  /* Type */
+  /* Universal values */
   --ff-body: 'Roboto', sans-serif;
+  --bg-body: #F9F9F9;
 
   /* Font Weight */
   --fw-500: 500;
@@ -28,11 +28,25 @@
   --fs-12: 0.8rem;
 
   /* Color Used for fonts */
-  --clr-primary: var(--clr-gray-900);
-  --clr-current-details: var(--clr-coolGray-500);
-  --clr-side-chanel-details: var(--clr-gray-500);
-  --clr-show-more: var(--clr-gray-500);
-  --clr-current-chanel-subscribers: var(--clr-trueGray-500);
+  --clr-heading: var(--clr-gray-900);
+  --clr-paragraph-primary: var(--clr-gray-900);
+  --clr-paragraph-secondary: var(--clr-gray-500);
+  --clr-link: var(--clr-gray-500);
+  --clr-paragraph-accent: var(--clr-trueGray-500);
+
+  /* Font zises used */
+  --fs-heading-primary: var(--fs-18);
+  --fs-heading-secondary: var(--fs-14);
+  --fs-paragraph-primary: var(--fs-14);
+  --fs-paragraph-secondary: var(--fs-12);
+  --fs-link: var(--fs-12);
+
+  /* Font weights used */
+  --fw-regular: var(--fw-400);
+  --fw-medium: var(--fw-500);
+
+  /* Horizental rule */
+  --bg-line-break: var(--clr-gray-200);
 }
 
 /** Reset Explained: https://piccalil.li/blog/a-modern-css-reset/  */
@@ -100,3 +114,10 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+
+/* 
+   =========
+   Utility
+   =========
+*/
+
