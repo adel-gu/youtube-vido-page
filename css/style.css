@@ -2,13 +2,21 @@
 :root {
   /* COLORS */
   --clr-gray-200: #E4E4E7;
+  --clr-gray-300: #D4D4D8;
   --clr-gray-500: #71717a;
   --clr-trueGray-500 : #737373;
   --clr-gray-900: #18181b;
   --clr-subscribe: #FFF;
 
+  /* Borders */
+  --br-clr-search: #E4E4E7;
+  --br-search: var(--br-clr-search);
+
+  /* Backgrounds */
   --bg-subscribe-btn:#DC2626;
   --bg-search-btn: #FAFAFA;
+  --bg-search-mic-btn: #F9F9F9;
+  --bg-body: #F9F9F9;
 
   /* ============
      Typography 
@@ -17,8 +25,7 @@
 
   /* Universal values */
   --ff-body: 'Roboto', sans-serif;
-  --bg-body: #F9F9F9;
-
+  
   /* Font Weight */
   --fw-500: 500;
   --fw-400: 400;
@@ -34,6 +41,8 @@
   --clr-paragraph-secondary: var(--clr-gray-500);
   --clr-link: var(--clr-gray-500);
   --clr-paragraph-accent: var(--clr-trueGray-500);
+  --place-holder: var(--clr-gray-300);
+
 
   /* Font zises used */
   --fs-heading-primary: var(--fs-18);
@@ -41,6 +50,7 @@
   --fs-paragraph-primary: var(--fs-14);
   --fs-paragraph-secondary: var(--fs-12);
   --fs-link: var(--fs-12);
+  --fs-place-holder: var(--fs-14);
 
   /* Font weights used */
   --fw-regular: var(--fw-400);
@@ -116,6 +126,15 @@ svg {
   }
 }
 
+/* Reset Button */
+button {
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* 
    =========
    Utility
@@ -167,4 +186,78 @@ svg {
 }
 .search-btn {
   background: var(--bg-search-btn);
+}
+
+/* ========================================= */
+body {
+  font-family: var(--ff-body);
+}
+
+/*! Layout  */
+
+.header,
+.left,
+.tools,
+.right,
+.search-bar,
+.home {
+  display: flex;
+}
+
+/*! Header */
+.header{
+  justify-content: space-between;
+  padding: 0.5em 1em 0.5em 0.5em;
+}
+
+/*! Left */
+.menu {
+  padding: 0.5em;
+  margin-right: 1.5em;
+}
+
+/*! Tools */
+.tools {
+  width: 45%;
+  justify-content: space-between;
+}
+
+.search-bar {
+  width: 90%;
+}
+
+.search-bar input,
+.search-bar button.search-btn{
+  border: 1px solid var(--br-search);
+}
+
+.search-bar input {
+  padding: 0.5em;
+  border-right: none;
+  width: 100%;
+}
+
+.search-bar input::placeholder{
+  color: var(--place-holder);
+  font-size: var(--fs-place-holder);
+  font-weight: var(--fw-regular);
+}
+
+.search-btn {
+  background: var(--bg-search-btn);
+  padding-block: 0.5em;
+  padding-inline: 1.5em;
+}
+
+.search-mic-btn {
+  background: var(--bg-search-mic-btn);
+  border: none;
+  border-radius: 100%;
+  padding: 0.125em 0.8em;
+  margin-left: 1em;
+}
+
+/*! Right  */
+.notification-btn {
+  margin-inline: 1.5em;
 }
