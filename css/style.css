@@ -3,23 +3,27 @@
   /*! Value Collections */
 
   /* COLORS */
-  --clr-gray-200: #E4E4E7;
+  --clr-white-100: #FFFFFF;
+  --clr-gray-50 : #FAFAFA;
+  --clr-gray-200: #F9F9FA;
+  --clr-gray-201: #E4E4E7;
   --clr-gray-300: #D4D4D8;
   --clr-gray-500: #71717a;
   --clr-coolGray-500: #6B7280;
   --clr-trueGray-500 : #737373;
   --clr-gray-900: #18181b;
-  --clr-white: #FFF;
   --clr-blue-600: #2563EB;
   --clr-red-600: #DC2626;
 
   /* Colors Specifications*/
-  --clr-100: var(--clr-white);
-  --clr-200: var(--clr-200);
+  --clr-100: var(--clr-white-100);
+  --clr-50: var(--clr-gray-50);
+  --clr-200: var(--clr-gray-200);
+  --clr-true-200: var(--clr-gray-201);
   --clr-300: var(--clr-gray-300);
-  --clr-501: var(--clr-gray-500);
-  --clr-502: var(--clr-coolGray-500);
-  --clr-503: var(--clr-trueGray-500);
+  --clr-500: var(--clr-gray-500);
+  --clr-cool-500: var(--clr-coolGray-500);
+  --clr-true-500: var(--clr-trueGray-500);
   --clr-r-600: var(--clr-red-600);
   --clr-b-600: var(--clr-blue-600);
   --clr-900: var(--clr-gray-900);
@@ -28,7 +32,14 @@
      Typography 
      ============
   */
-  --ff: 'Roboto', sans-serif;
+  --ff: 'Inter', sans-serif;
+
+  --fs-18: 1.125rem;
+  --fs-14: 0.875rem;
+  --fs-12: 0.75rem;
+
+  --fw-400: 400;
+  --fw-500: 500;
 
   /* Font zises used */
   --fs-primary: var(--fs-18);
@@ -82,10 +93,15 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Make images easier to work with */
 img,
 picture,
-svg {
+svg,
+iframe{
   max-width: 100%;
   /* display: block; */
 }
@@ -131,17 +147,17 @@ button {
 .clr-300 {
   color: var(--clr-300);
 }
-.clr-501 {
-  color: var(--clr-501);
+.clr-500 {
+  color: var(--clr-500);
 }
-.clr-502 {
-  color: var(--clr-502);
+.clr-cool-500 {
+  color: var(--clr-cool-500);
 }
-.clr-503 {
-  color: var(--clr-503);
+.clr-true-500 {
+  color: var(--clr-true-500);
 }
 .clr-b-600{
-  background: var(--clr-b-600);
+  color: var(--clr-b-600);
 }
 .clr-900 {
   color: var(--clr-900);
@@ -172,18 +188,33 @@ button {
 }
 
 /** Backgrounds*/
+.bg-50 {
+  background: var(--clr-50);
+}
 .bg-100 {
   background: var(--clr-100);
 }
 .bg-200 {
-  color: var(--clr-200);
+  background: var(--clr-200);
+}
+.bg-cool-500 {
+  background: var(--clr-cool-500);
 }
 .bg-r-600{
   background: var(--clr-r-600);
 }
+
+/** Borders */
+.br-200{
+  border: 1px solid var(--clr-true-200);
+}
+
+/** Other styles */
+.txt-cap {
+  text-transform: uppercase;
+}
 /* ========================================= */
 /*! Layout  */
-
 .header,
 .left,
 .tools,
@@ -215,11 +246,6 @@ button {
   width: 90%;
 }
 
-.search-bar input,
-.search-bar button.search-btn{
-  border: 1px solid var(--br-search);
-}
-
 .search-bar input {
   padding: 0.5em;
   border-right: none;
@@ -227,8 +253,8 @@ button {
 }
 
 .search-bar input::placeholder{
-  color: var(--place-holder);
-  font-size: var(--fs-place-holder);
+  color: var(--clr-300);
+  font-size: var(--fs-secondary);
   font-weight: var(--fw-regular);
 }
 
@@ -246,4 +272,88 @@ button {
 /*! Right  */
 .notification-btn {
   margin-inline: 1.5em;
+}
+
+/*!===================================  */
+
+/*! Main Section */
+main {
+  width: 70%;
+  max-width: 853px;
+}
+
+/*! Container */
+.container {
+  margin-inline: auto;
+  padding-top: 1.5em;
+  width: 95%;
+}
+
+/** Flex boxes */
+.views-interaction,
+.interaction-list,
+.interaction-item,
+.bottom-section{
+  display: flex;
+}
+
+/** TOP Section Layout  */
+/*! Current Video Details  */
+.video-details {
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+}
+
+/*! Views Details and User Interection buttons */
+.views-interaction {
+  padding-top: 0.625em;
+}
+
+/*! Interuction buttons container */
+.interaction-list {
+  justify-content: space-between;
+  margin-left: auto;
+}
+/*! Interection buttons  */
+.interaction-item {
+  margin-left: 1.5em;
+}
+
+/*! Icons text description */
+li span {
+  margin-left: .5em;
+}
+.dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 0.1875em;
+  margin-inline: 0.125em;
+}
+
+/*!============================= */
+/*! Bottom Section Layout*/
+.bottom-section {
+  padding-top: 1em;
+}
+
+/*! Col 2 */
+.col2 {
+  width: 75%;
+  margin-left: 1em;
+}
+.channel-info {
+  padding-block: 0.375em;
+}
+.description {
+  padding-block: 1em;
+}
+
+/*! Col 3 */
+.col3 {
+  margin-left: auto;
+}
+.subscribe-btn {
+  padding: 0.5em 1.25em;
 }
