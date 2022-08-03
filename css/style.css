@@ -1,24 +1,17 @@
 /*! Custom Property */
 :root {
+  /*! Value Collections */
+
   /* COLORS */
   --clr-gray-200: #E4E4E7;
   --clr-gray-300: #D4D4D8;
   --clr-gray-500: #71717a;
+  --clr-coolGray-500: #6B7280;
   --clr-trueGray-500 : #737373;
   --clr-gray-900: #18181b;
-  --clr-subscribe: #FFF;
-
-  /* Borders */
-  --br-clr-search: #E4E4E7;
-  --br-search: var(--br-clr-search);
-
-  /* Backgrounds */
-  --bg-subscribe-btn:#DC2626;
-  --bg-search-btn: #FAFAFA;
-  --bg-search-mic-btn: #F9F9F9;
-  --bg-body: #F9F9F9;
-
-  --bg-header: #fff;
+  --clr-white: #FFF;
+  --clr-blue-600: #2563EB;
+  --clr-red-600: #DC2626;
 
   /* ============
      Typography 
@@ -28,37 +21,41 @@
   /* Universal values */
   --ff-body: 'Roboto', sans-serif;
   
-  /* Font Weight */
-  --fw-500: 500;
-  --fw-400: 400;
-
-  /* Font Size */
-  --fs-18: 1.1rem;
-  --fs-14: 0.9rem;
-  --fs-12: 0.8rem;
-
   /* Color Used for fonts */
-  --clr-heading: var(--clr-gray-900);
-  --clr-paragraph-primary: var(--clr-gray-900);
-  --clr-paragraph-secondary: var(--clr-gray-500);
-  --clr-link: var(--clr-gray-500);
-  --clr-paragraph-accent: var(--clr-trueGray-500);
-  --place-holder: var(--clr-gray-300);
-
+  --clr-primary: var(--clr-gray-900);
+  --clr-secondary: var(--clr-gray-500);
+  --clr-accent-1: var(--clr-coolGray-500);
+  --clr-accent-2: var(--clr-trueGray-500);
+  --clr-place-holder: var(--clr-gray-300);
+  --clr-txt-subscribe: var(--clr-white);
+  --clr-interaction: var(--clr-blue-600);
 
   /* Font zises used */
-  --fs-heading-primary: var(--fs-18);
-  --fs-heading-secondary: var(--fs-14);
-  --fs-paragraph-primary: var(--fs-14);
-  --fs-paragraph-secondary: var(--fs-12);
-  --fs-link: var(--fs-12);
-  --fs-place-holder: var(--fs-14);
+  --fs-primary: var(--fs-18);
+  --fs-secondary: var(--fs-14);
+  --fs-accent: var(--fs-12);
 
   /* Font weights used */
   --fw-regular: var(--fw-400);
   --fw-medium: var(--fw-500);
 
-  /* Horizental rule */
+  /* ==================
+     Border Colors
+     ==================
+  */
+
+  /* Borders */
+  --br-search: var(--clr-gray-200);
+
+  /* ==================
+    Background Colors
+    ==================
+  */
+
+  /* Backgrounds */
+  --bg-subscribe-btn: var(--clr-red-600);
+  --bg-search-btn: var(--clr-gray-200);
+  --bg-body: #F9F9F9;
   --bg-line-break: var(--clr-gray-200);
 }
 
