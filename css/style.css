@@ -18,6 +18,8 @@
   --bg-search-mic-btn: #F9F9F9;
   --bg-body: #F9F9F9;
 
+  --bg-header: #fff;
+
   /* ============
      Typography 
      ============
@@ -180,7 +182,10 @@ button {
   font-weight: var(--fw-medium);
 }
 
-/*! Buttons Bavkgrounds*/
+/*! Backgrounds*/
+.header-bg {
+  background: var(--bg-header);
+}
 .subscribe-bg {
   background: var(--bg-subscribe-btn);
 }
