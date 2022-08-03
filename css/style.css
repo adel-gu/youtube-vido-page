@@ -180,17 +180,21 @@ button {
   font-weight: var(--fw-medium);
 }
 
-/*! Buttons */
-.subscribe-btn {
+/*! Buttons Bavkgrounds*/
+.subscribe-bg {
   background: var(--bg-subscribe-btn);
 }
-.search-btn {
+.search-bg {
   background: var(--bg-search-btn);
+}
+.mic-bg{
+  background: var(--bg-search-mic-btn);
 }
 
 /* ========================================= */
 body {
   font-family: var(--ff-body);
+  background: var(--bg-body);
 }
 
 /*! Layout  */
@@ -244,14 +248,11 @@ body {
 }
 
 .search-btn {
-  background: var(--bg-search-btn);
   padding-block: 0.5em;
   padding-inline: 1.5em;
 }
 
 .search-mic-btn {
-  background: var(--bg-search-mic-btn);
-  border: none;
   border-radius: 100%;
   padding: 0.125em 0.8em;
   margin-left: 1em;
