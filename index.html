@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <header class="header-bg">
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
-  <body>
-    <header class="header">
+  <body class="bg-200 ff">
+    <header class="header | bg-100">
       <div class="left">
         <button class="menu">
           <img src="assets/icons/header-icons/menu.svg" alt="Menu" />
@@ -25,12 +25,12 @@
       </div>
       <div class="tools">
         <div class="search-bar">
-          <input type="text" placeholder="Search" />
-          <button class="search-btn | search-bg">
+          <input class="br-200" type="text" placeholder="Search" />
+          <button class="search-btn | bg-50 br-200">
             <img src="assets/icons/header-icons/search.svg" alt="Search" />
           </button>
         </div>
-        <button class="search-mic-btn | mic-bg">
+        <button class="search-mic-btn | bg-200">
           <img
             src="assets/icons/header-icons/mic-voice-search.svg"
             alt="Microphone Search"
@@ -55,5 +55,114 @@
         </button>
       </div>
     </header>
+    <div class="container">
+      <main>
+        <section class="top-section">
+          <iframe
+            width="853"
+            height="480"
+            src="https://www.youtube.com/embed/Ch_LoWKLv3A"
+            title="Build a responsive website with HTML & CSS | Part three: General styling"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="video-details">
+            <h1 id="title-header" class="clr-900 fs-primary fw-medium">
+              Build a responsive website with HTML & CSS | Part three: General
+              styling
+            </h1>
+            <div class="views-interaction">
+              <p class="clr-cool-500 fs-secondary fw-regular">
+                20,679 views <span class="dot | bg-cool-500"></span> Jul 19,
+                2022
+              </p>
+              <ul role="list" class="interaction-list">
+                <li class="interaction-item">
+                  <img
+                    src="assets/icons/user-interactions/like.svg"
+                    alt="Like"
+                  />
+                  <span
+                    aria-label="Likes"
+                    class="clr-b-600 fs-secondary fw-medium"
+                    >13K</span
+                  >
+                </li>
+                <li class="interaction-item">
+                  <img
+                    src="assets/icons/user-interactions/dislike.svg"
+                    alt="Dislike"
+                  />
+                </li>
+                <li class="interaction-item">
+                  <img
+                    src="assets/icons/user-interactions/share.svg"
+                    alt="Share"
+                  />
+                  <span
+                    aria-label="share video"
+                    class="clr-true-500 fs-secondary fw-medium txt-cap"
+                    >share</span
+                  >
+                </li>
+                <li class="interaction-item">
+                  <img
+                    src="assets/icons/user-interactions/save.svg"
+                    alt="Save Video"
+                  />
+                  <span
+                    aria-label="save video"
+                    class="clr-true-500 fs-secondary fw-medium txt-cap"
+                    >save</span
+                  >
+                </li>
+                <li class="interaction-item">
+                  <img
+                    src="assets/icons/user-interactions/more-details.svg"
+                    alt="More"
+                  />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <hr class="br-200" />
+        <section class="bottom-section">
+          <div class="col1">
+            <img
+              src="assets/icons/channel-avatar/Small.svg"
+              alt="Chanel Avatar"
+            />
+          </div>
+          <div class="col2">
+            <div class="channel-info">
+              <h2 class="clr-900 fs-secondary fw-medium">Kevin Powell</h2>
+              <p class="clr-true-500 fs-accent fw-regular">581K subscribers</p>
+            </div>
+            <div class="description">
+              <p class="clr-900 fs-secondary fw-regular">
+                Find your absolutely beautiful and serene place and listen to
+                nature sounds, birds signing and relaxing water sounds with
+                breathtaking views of Mount Shuksan. It’s 8-hour 4k video of
+                discovery and peace. Download it for your personal use and
+                transform your 4K TV into a source of relaxation and
+                restoration.
+              </p>
+            </div>
+            <a class="txt-cap clr-500 fs-accent fw-regular" href="#"
+              >show more</a
+            >
+          </div>
+          <div class="col3">
+            <button
+              class="subscribe-btn | txt-cap clr-100 fs-secondary bg-r-600 fw-medium"
+            >
+              subscribe
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
