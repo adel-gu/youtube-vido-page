@@ -100,8 +100,7 @@ a {
 /* Make images easier to work with */
 img,
 picture,
-svg,
-iframe{
+svg {
   max-width: 100%;
   /* display: block; */
 }
@@ -213,16 +212,12 @@ button {
 .txt-cap {
   text-transform: uppercase;
 }
-/* ========================================= */
-/*! Layout  */
-.header,
-.left,
-.tools,
-.right,
-.search-bar,
-.home {
+
+.flexy {
   display: flex;
 }
+/* ========================================= */
+/*! Layout  */
 
 /*! Header */
 .header{
@@ -289,14 +284,6 @@ main {
   width: 95%;
 }
 
-/** Flex boxes */
-.views-interaction,
-.interaction-list,
-.interaction-item,
-.bottom-section{
-  display: flex;
-}
-
 /** TOP Section Layout  */
 /*! Current Video Details  */
 .video-details {
@@ -356,4 +343,20 @@ li span {
 }
 .subscribe-btn {
   padding: 0.5em 1.25em;
+}
+
+/*! =====================  */
+/*! aside section*/
+aside {
+  width: 31%;
+  margin-left: auto;
+}
+h4 {
+  margin-right: 0.25em;
+}
+.video-item {
+  padding-bottom: 0.5em;
+}
+.item-container__info {
+  padding-left: .5em;
 }
