@@ -69,7 +69,7 @@
 }
 
 /* Remove default margin */
-*{
+* {
   margin: 0;
   padding: 0;
   font: inherit;
@@ -188,6 +188,11 @@ button {
   background: var(--bg-search-btn);
 }
 
+.btn-fit {
+  height: fit-content;
+  margin-block: auto;
+}
+
 /* ========================================= */
 body {
   font-family: var(--ff-body);
@@ -207,13 +212,13 @@ body {
 /*! Header */
 .header{
   justify-content: space-between;
-  padding: 0.5em 1em 0.5em 0.5em;
+  padding: 0.5em 1em 0.5em calc(1em - 0.8125em);
 }
 
 /*! Left */
-.menu {
-  padding: 0.5em;
+.menu-btn {
   margin-right: 1.5em;
+  padding: 0.8125em 0.708125em;
 }
 
 /*! Tools */
@@ -245,19 +250,24 @@ body {
 
 .search-btn {
   background: var(--bg-search-btn);
-  padding-block: 0.5em;
-  padding-inline: 1.5em;
+  padding: 0.625em 1.625em;
+  height: auto;
 }
 
 .search-mic-btn {
   background: var(--bg-search-mic-btn);
   border: none;
   border-radius: 100%;
-  padding: 0.125em 0.8em;
+  padding: calc(0.375em * 2) 0.9em;
   margin-left: 1em;
 }
 
 /*! Right  */
+.video-add-btn {
+  padding: 0.375em 0.1875em;
+}
+
 .notification-btn {
   margin-inline: 1.5em;
+  padding: 0.25em;
 }
