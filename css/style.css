@@ -227,12 +227,12 @@ body {
   display: flex;
 }
 /* ========================================= */
-/*! Layout  */
+/*! ========== Layout ============  */
 
 /*! Header */
 .header{
   justify-content: space-between;
-  padding: 0.5em 1em 0.5em calc(1em - 0.8125em);
+  padding: 0.5em 1.5em 0.5em calc(1.5em - 0.8125em);
 }
 
 /*! Left */
