@@ -212,7 +212,7 @@ button {
 /* ========================================= */
 body {
   font-family: var(--ff-body);
-
+}
 /** Borders */
 .br-200{
   border: 1px solid var(--clr-true-200);
@@ -232,7 +232,7 @@ body {
 /*! Header */
 .header{
   justify-content: space-between;
-  padding: 0.5em 1em 0.5em calc(1em - 0.8125em); //
+  padding: 0.5em 1em 0.5em calc(1em - 0.8125em);
 }
 
 /*! Left */
