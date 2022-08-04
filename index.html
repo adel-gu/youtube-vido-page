@@ -7,30 +7,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
+    <title>
+      Build a responsive website with HTML & CSS | Part three: General styling
+    </title>
   </head>
-  <body>
-    <header class="header">
-      <div class="left">
-        <button class="menu-btn | btn-fit">
+  <body class="bg-200 ff">
+    <header class="header | flexy bg-100">
+      <div class="left flexy">
+        <button class="menu | btn-fit">
           <img src="assets/icons/header-icons/menu.svg" alt="Menu" />
         </button>
-        <a class="home" href="https://youtube.com">
+        <a class="home flexy" href="https://youtube.com">
           <img src="assets/icons/header-icons/logo.svg" alt="YouTube" />
         </a>
       </div>
-      <div class="tools">
-        <div class="search-bar">
-          <input type="text" placeholder="Search" />
-          <button class="search-btn">
+      <div class="tools flexy">
+        <div class="search-bar flexy">
+          <input class="br-200" type="text" placeholder="Search" />
+          <button class="search-btn | bg-50 br-200">
             <img src="assets/icons/header-icons/search.svg" alt="Search" />
           </button>
         </div>
-        <button class="search-mic-btn | btn-fit">
+        <button class="search-mic-btn | bg-200 btn-fit">
           <img
             src="assets/icons/header-icons/mic-voice-search.svg"
             alt="Microphone Search"
@@ -55,5 +57,303 @@
         </button>
       </div>
     </header>
+    <div class="container flexy">
+      <main>
+        <section class="top-section">
+          <iframe
+            width="853"
+            height="480"
+            src="https://www.youtube.com/embed/Ch_LoWKLv3A"
+            title="Build a responsive website with HTML & CSS | Part three: General styling"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="video-details">
+            <h1 id="title-header" class="clr-900 fs-primary fw-medium">
+              Build a responsive website with HTML & CSS | Part three: General
+              styling
+            </h1>
+            <div class="views-interaction flexy">
+              <p class="clr-cool-500 fs-secondary fw-regular">
+                20,679 views <span class="dot | bg-cool-500"></span> Jul 19,
+                2022
+              </p>
+              <ul role="list" class="interaction-list flexy">
+                <li class="interaction-item flexy">
+                  <button>
+                    <img
+                      src="assets/icons/user-interactions/like.svg"
+                      alt="Like"
+                    />
+                  </button>
+                  <span
+                    aria-label="Likes"
+                    class="clr-b-600 fs-secondary fw-medium"
+                    >13K</span
+                  >
+                </li>
+                <li class="interaction-item flexy">
+                  <button>
+                    <img
+                      src="assets/icons/user-interactions/dislike.svg"
+                      alt="Dislike"
+                    />
+                  </button>
+                  <span
+                    aria-label="Dislike"
+                    class="clr-true-500 fs-secondary fw-medium txt-cap"
+                    >dislike</span
+                  >
+                </li>
+                <li class="interaction-item flexy">
+                  <button>
+                    <img
+                      src="assets/icons/user-interactions/share.svg"
+                      alt="Share"
+                    />
+                  </button>
+                  <span
+                    aria-label="share video"
+                    class="clr-true-500 fs-secondary fw-medium txt-cap"
+                    >share</span
+                  >
+                </li>
+                <li class="interaction-item flexy">
+                  <button>
+                    <img
+                      src="assets/icons/user-interactions/save.svg"
+                      alt="Save Video"
+                    />
+                  </button>
+                  <span
+                    aria-label="save video"
+                    class="clr-true-500 fs-secondary fw-medium txt-cap"
+                    >save</span
+                  >
+                </li>
+                <li class="interaction-item">
+                  <button>
+                    <img
+                      src="assets/icons/user-interactions/more-details.svg"
+                      alt="More"
+                    />
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <hr class="br-200" />
+        <section class="bottom-section flexy">
+          <div class="col1">
+            <button>
+              <img
+                src="assets/icons/channel-avatar/Small.svg"
+                alt="Chanel Avatar"
+              />
+            </button>
+          </div>
+          <div class="col2">
+            <div class="channel-info">
+              <h2 class="clr-900 fs-secondary fw-medium">Kevin Powell</h2>
+              <p class="clr-true-500 fs-accent fw-regular">581K subscribers</p>
+            </div>
+            <div class="description">
+              <p class="clr-900 fs-secondary fw-regular">
+                Find your absolutely beautiful and serene place and listen to
+                nature sounds, birds signing and relaxing water sounds with
+                breathtaking views of Mount Shuksan. It’s 8-hour 4k video of
+                discovery and peace. Download it for your personal use and
+                transform your 4K TV into a source of relaxation and
+                restoration.
+              </p>
+            </div>
+            <a class="txt-cap clr-500 fs-accent fw-regular" href="#"
+              >show more</a
+            >
+          </div>
+          <div class="col3">
+            <button
+              class="subscribe-btn | txt-cap clr-100 fs-secondary bg-r-600 fw-medium"
+            >
+              subscribe
+            </button>
+          </div>
+        </section>
+      </main>
+      <aside>
+        <ul role="list" class="video-list">
+          <li class="video-item">
+            <div class="item-container flexy">
+              <img src="assets/images/thumb-1.jpg" alt="IMG" />
+              <div class="item-container__info">
+                <h3 class="clr-900 fs-secondary fw-medium">
+                  Nature Sounds in the Forest – HD Stereo Audio
+                </h3>
+                <div class="info__channel | flexy">
+                  <h4 class="clr-500 fs-accent fw-medium">ChannelName</h4>
+                  <img
+                    src="assets/icons/channels-verified/verified.svg"
+                    alt="Verified"
+                  />
+                </div>
+                <p class="clr-cool-500 fs-accent fw-regular">
+                  20,679 views <span class="dot | bg-cool-500"></span> Jul 19,
+                  2022
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="video-item">
+            <div class="item-container flexy">
+              <img src="assets/images/thumb-2.jpg" alt="IMG" />
+              <div class="item-container__info">
+                <h3 class="clr-900 fs-secondary fw-medium">
+                  Calm Lake Ambience
+                </h3>
+                <div class="info__channel | flexy">
+                  <h4 class="clr-500 fs-accent fw-medium">ChannelName</h4>
+                  <img
+                    src="assets/icons/channels-verified/verified.svg"
+                    alt="Verified"
+                  />
+                </div>
+                <p class="clr-cool-500 fs-accent fw-regular">
+                  20,679 views <span class="dot | bg-cool-500"></span> Jul 19,
+                  2022
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="video-item">
+            <div class="item-container flexy">
+              <img src="assets/images/thumb-3.jpg" alt="IMG" />
+              <div class="item-container__info">
+                <h3 class="clr-900 fs-secondary fw-medium">
+                  Switzerland in 4K
+                </h3>
+                <div class="info__channel | flexy">
+                  <h4 class="clr-500 fs-accent fw-medium">ChannelName</h4>
+                  <img
+                    src="assets/icons/channels-verified/verified.svg"
+                    alt="Verified"
+                  />
+                </div>
+                <p class="clr-cool-500 fs-accent fw-regular">
+                  20,679 views <span class="dot | bg-cool-500"></span> Jul 19,
+                  2022
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="video-item">
+            <div class="item-container flexy">
+              <img src="assets/images/thumb-4.jpg" alt="IMG" />
+              <div class="item-container__info">
+                <h3 class="clr-900 fs-secondary fw-medium">
+                  Great Rock Faces in 4K
+                </h3>
+                <div class="info__channel | flexy">
+                  <h4 class="clr-500 fs-accent fw-medium">ChannelName</h4>
+                  <img
+                    src="assets/icons/channels-verified/verified.svg"
+                    alt="Verified"
+                  />
+                </div>
+                <p class="clr-cool-500 fs-accent fw-regular">
+                  20,679 views <span class="dot | bg-cool-500"></span> Jul 19,
+                  2022
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="video-item">
+            <div class="item-container flexy">
+              <img src="assets/images/thumb-5.jpg" alt="IMG" />
+              <div class="item-container__info">
+                <h3 class="clr-900 fs-secondary fw-medium">
+                  A Slow Hike Through the New Zealand Bush
+                </h3>
+                <div class="info__channel | flexy">
+                  <h4 class="clr-500 fs-accent fw-medium">ChannelName</h4>
+                  <img
+                    src="assets/icons/channels-verified/verified.svg"
+                    alt="Verified"
+                  />
+                </div>
+                <p class="clr-cool-500 fs-accent fw-regular">
+                  20,679 views <span class="dot | bg-cool-500"></span> Jul 19,
+                  2022
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="video-item">
+            <div class="item-container flexy">
+              <img src="assets/images/thumb-6.jpg" alt="IMG" />
+              <div class="item-container__info">
+                <h3 class="clr-900 fs-secondary fw-medium">
+                  8 Hours of Water Sounds from the Bay
+                </h3>
+                <div class="info__channel | flexy">
+                  <h4 class="clr-500 fs-accent fw-medium">ChannelName</h4>
+                  <img
+                    src="assets/icons/channels-verified/verified.svg"
+                    alt="Verified"
+                  />
+                </div>
+                <p class="clr-cool-500 fs-accent fw-regular">
+                  20,679 views <span class="dot | bg-cool-500"></span> Jul 19,
+                  2022
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="video-item">
+            <div class="item-container flexy">
+              <img src="assets/images/thumb-7.jpg" alt="IMG" />
+              <div class="item-container__info">
+                <h3 class="clr-900 fs-secondary fw-medium">
+                  4 Continuous Hours of Birdwatching and Lofi
+                </h3>
+                <div class="info__channel | flexy">
+                  <h4 class="clr-500 fs-accent fw-medium">ChannelName</h4>
+                  <img
+                    src="assets/icons/channels-verified/verified.svg"
+                    alt="Verified"
+                  />
+                </div>
+                <p class="clr-cool-500 fs-accent fw-regular">
+                  20,679 views <span class="dot | bg-cool-500"></span> Jul 19,
+                  2022
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="video-item">
+            <div class="item-container flexy">
+              <img src="assets/images/thumb-8.jpg" alt="IMG" />
+              <div class="item-container__info">
+                <h3 class="clr-900 fs-secondary fw-medium">
+                  4K HD Video Background
+                </h3>
+                <div class="info__channel | flexy">
+                  <h4 class="clr-500 fs-accent fw-medium">ChannelName</h4>
+                  <img
+                    src="assets/icons/channels-verified/verified.svg"
+                    alt="Verified"
+                  />
+                </div>
+                <p class="clr-cool-500 fs-accent fw-regular">
+                  20,679 views <span class="dot | bg-cool-500"></span> Jul 19,
+                  2022
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </aside>
+    </div>
   </body>
 </html>
