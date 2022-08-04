@@ -1,63 +1,54 @@
 /*! Custom Property */
 :root {
+  /*! Value Collections */
+
   /* COLORS */
-  --clr-gray-200: #E4E4E7;
+  --clr-white-100: #FFFFFF;
+  --clr-gray-50 : #FAFAFA;
+  --clr-gray-200: #F9F9FA;
+  --clr-gray-201: #E4E4E7;
   --clr-gray-300: #D4D4D8;
   --clr-gray-500: #71717a;
+  --clr-coolGray-500: #6B7280;
   --clr-trueGray-500 : #737373;
   --clr-gray-900: #18181b;
-  --clr-subscribe: #FFF;
+  --clr-blue-600: #2563EB;
+  --clr-red-600: #DC2626;
 
-  /* Borders */
-  --br-clr-search: #E4E4E7;
-  --br-search: var(--br-clr-search);
-
-  /* Backgrounds */
-  --bg-subscribe-btn:#DC2626;
-  --bg-search-btn: #FAFAFA;
-  --bg-search-mic-btn: #F9F9F9;
-  --bg-body: #F9F9F9;
+  /* Colors Specifications*/
+  --clr-100: var(--clr-white-100);
+  --clr-50: var(--clr-gray-50);
+  --clr-200: var(--clr-gray-200);
+  --clr-true-200: var(--clr-gray-201);
+  --clr-300: var(--clr-gray-300);
+  --clr-500: var(--clr-gray-500);
+  --clr-cool-500: var(--clr-coolGray-500);
+  --clr-true-500: var(--clr-trueGray-500);
+  --clr-r-600: var(--clr-red-600);
+  --clr-b-600: var(--clr-blue-600);
+  --clr-900: var(--clr-gray-900);
 
   /* ============
      Typography 
      ============
   */
+  --ff: 'Inter', sans-serif;
 
-  /* Universal values */
-  --ff-body: 'Roboto', sans-serif;
-  
-  /* Font Weight */
-  --fw-500: 500;
+  --fs-18: 1.125rem;
+  --fs-14: 0.875rem;
+  --fs-12: 0.75rem;
+
   --fw-400: 400;
-
-  /* Font Size */
-  --fs-18: 1.1rem;
-  --fs-14: 0.9rem;
-  --fs-12: 0.8rem;
-
-  /* Color Used for fonts */
-  --clr-heading: var(--clr-gray-900);
-  --clr-paragraph-primary: var(--clr-gray-900);
-  --clr-paragraph-secondary: var(--clr-gray-500);
-  --clr-link: var(--clr-gray-500);
-  --clr-paragraph-accent: var(--clr-trueGray-500);
-  --place-holder: var(--clr-gray-300);
-
+  --fw-500: 500;
 
   /* Font zises used */
-  --fs-heading-primary: var(--fs-18);
-  --fs-heading-secondary: var(--fs-14);
-  --fs-paragraph-primary: var(--fs-14);
-  --fs-paragraph-secondary: var(--fs-12);
-  --fs-link: var(--fs-12);
-  --fs-place-holder: var(--fs-14);
+  --fs-primary: var(--fs-18);
+  --fs-secondary: var(--fs-14);
+  --fs-accent: var(--fs-12);
 
   /* Font weights used */
   --fw-regular: var(--fw-400);
   --fw-medium: var(--fw-500);
-
-  /* Horizental rule */
-  --bg-line-break: var(--clr-gray-200);
 }
 
 /** Reset Explained: https://piccalil.li/blog/a-modern-css-reset/  */
@@ -102,6 +93,10 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Make images easier to work with */
 img,
 picture,
@@ -141,52 +136,73 @@ button {
    =========
 */
 
-/*! Typography  */
-.heading-1{
-  color: var(--clr-heading);
-  font-size: var(--fs-heading-primary);
+/** COLORS */
+.clr-100 {
+  color: var(--clr-100);
+}
+.clr-200 {
+  color: var(--clr-200);
+}
+.clr-300 {
+  color: var(--clr-300);
+}
+.clr-500 {
+  color: var(--clr-500);
+}
+.clr-cool-500 {
+  color: var(--clr-cool-500);
+}
+.clr-true-500 {
+  color: var(--clr-true-500);
+}
+.clr-b-600{
+  color: var(--clr-b-600);
+}
+.clr-900 {
+  color: var(--clr-900);
+}
+
+/** Font Family */
+.ff {
+  font-family: var(--ff);
+}
+
+/** Font-Size */
+.fs-primary {
+  font-size: var(--fs-primary);
+}
+.fs-secondary {
+  font-size: var(--fs-secondary);
+}
+.fs-accent {
+  font-size: var(--fs-accent);
+}
+
+/** Font Weights  */
+.fw-medium {
   font-weight: var(--fw-medium);
 }
-.heading-2{
-  color: var(--clr-heading);
-  font-size: var(--fs-heading-secondary);
-  font-weight: var(--fw-medium);
-}
-.heading-3{
-  color: var(--clr-heading);
-  font-size: var(--fs-heading-secondary);
+.fw-regular {
   font-weight: var(--fw-medium);
 }
 
-.par-black {
-  color: var(--clr-paragraph-primary);
-  font-size: var(--fs-paragraph-primary);
-  font-weight: var(--fw-regular);
+/** Backgrounds*/
+.bg-50 {
+  background: var(--clr-50);
 }
-.par-grey {
-  color: var(--clr-paragraph-secondary);
-  font-size: var(--fs-paragraph-secondary);
-  font-weight: var(--fw-regular);
+.bg-100 {
+  background: var(--clr-100);
 }
-
-.txt-subscribe {
-  color: var(--clr-subscribe);
-  font-size: var(--fs-paragraph-primary);
-  font-weight: var(--fw-medium);
+.bg-200 {
+  background: var(--clr-200);
 }
-.txt.link {
-  color: var(--clr-link);
-  font-size: var(--fs-link);
-  font-weight: var(--fw-medium);
+.bg-cool-500 {
+  background: var(--clr-cool-500);
+}
+.bg-r-600{
+  background: var(--clr-r-600);
 }
 
-/*! Buttons */
-.subscribe-btn {
-  background: var(--bg-subscribe-btn);
-}
-.search-btn {
-  background: var(--bg-search-btn);
-}
 
 .btn-fit {
   height: fit-content;
@@ -196,23 +212,27 @@ button {
 /* ========================================= */
 body {
   font-family: var(--ff-body);
+
+/** Borders */
+.br-200{
+  border: 1px solid var(--clr-true-200);
 }
 
-/*! Layout  */
+/** Other styles */
+.txt-cap {
+  text-transform: uppercase;
+}
 
-.header,
-.left,
-.tools,
-.right,
-.search-bar,
-.home {
+.flexy {
   display: flex;
 }
+/* ========================================= */
+/*! Layout  */
 
 /*! Header */
 .header{
   justify-content: space-between;
-  padding: 0.5em 1em 0.5em calc(1em - 0.8125em);
+  padding: 0.5em 1em 0.5em calc(1em - 0.8125em); //
 }
 
 /*! Left */
@@ -231,11 +251,6 @@ body {
   width: 90%;
 }
 
-.search-bar input,
-.search-bar button.search-btn{
-  border: 1px solid var(--br-search);
-}
-
 .search-bar input {
   padding: 0.5em;
   border-right: none;
@@ -243,20 +258,16 @@ body {
 }
 
 .search-bar input::placeholder{
-  color: var(--place-holder);
-  font-size: var(--fs-place-holder);
+  color: var(--clr-300);
+  font-size: var(--fs-secondary);
   font-weight: var(--fw-regular);
 }
 
 .search-btn {
-  background: var(--bg-search-btn);
   padding: 0.625em 1.625em;
-  height: auto;
 }
 
 .search-mic-btn {
-  background: var(--bg-search-mic-btn);
-  border: none;
   border-radius: 100%;
   padding: calc(0.375em * 2) 0.9em;
   margin-left: 1em;
@@ -270,4 +281,97 @@ body {
 .notification-btn {
   margin-inline: 1.5em;
   padding: 0.25em;
+}
+
+/*!===================================  */
+
+/*! Main Section */
+main {
+  width: 70%;
+  max-width: 853px;
+}
+
+/*! Container */
+.container {
+  margin-inline: auto;
+  padding-top: 1.5em;
+  width: 95%;
+}
+
+/** TOP Section Layout  */
+/*! Current Video Details  */
+.video-details {
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+}
+
+/*! Views Details and User Interection buttons */
+.views-interaction {
+  padding-top: 0.625em;
+}
+
+/*! Interuction buttons container */
+.interaction-list {
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+}
+/*! Interection buttons  */
+.interaction-item {
+  margin-left: 1.5em;
+}
+
+/*! Icons text description */
+li span {
+  margin-left: .5em;
+}
+.dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 0.1875em;
+  margin-inline: 0.125em;
+}
+
+/*!============================= */
+/*! Bottom Section Layout*/
+.bottom-section {
+  padding-top: 1em;
+}
+
+/*! Col 2 */
+.col2 {
+  width: 75%;
+  margin-left: 1em;
+}
+.channel-info {
+  padding-block: 0.375em;
+}
+.description {
+  padding-block: 1em;
+}
+
+/*! Col 3 */
+.col3 {
+  margin-left: auto;
+}
+.subscribe-btn {
+  padding: 0.5em 1.25em;
+}
+
+/*! =====================  */
+/*! aside section*/
+aside {
+  width: 31%;
+  margin-left: auto;
+}
+h4 {
+  margin-right: 0.25em;
+}
+.video-item {
+  padding-bottom: 0.5em;
+}
+.item-container__info {
+  padding-left: .5em;
 }
