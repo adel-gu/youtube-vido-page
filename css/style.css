@@ -299,6 +299,7 @@ main {
 /*! Interuction buttons container */
 .interaction-list {
   justify-content: space-between;
+  align-items: center;
   margin-left: auto;
 }
 /*! Interection buttons  */
