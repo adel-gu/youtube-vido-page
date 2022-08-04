@@ -3,30 +3,24 @@
   /*! Value Collections */
 
   /* COLORS */
-  --clr-white-100: #FFFFFF;
-  --clr-gray-50 : #FAFAFA;
-  --clr-gray-200: #F9F9FA;
-  --clr-gray-201: #E4E4E7;
-  --clr-gray-300: #D4D4D8;
-  --clr-gray-500: #71717a;
-  --clr-coolGray-500: #6B7280;
-  --clr-trueGray-500 : #737373;
-  --clr-gray-900: #18181b;
-  --clr-blue-600: #2563EB;
-  --clr-red-600: #DC2626;
+  --clr-white: #FFFFFF;
+  --clr-black: #000;
+  --clr-gray: #AAAAAA;
+  --clr-dark-gray: #181818;
+  --clr-lighter-gray: #121212;
+  --clr-red:  #CC0000;
+  
 
   /* Colors Specifications*/
-  --clr-100: var(--clr-white-100);
-  --clr-50: var(--clr-gray-50);
-  --clr-200: var(--clr-gray-200);
-  --clr-true-200: var(--clr-gray-201);
-  --clr-300: var(--clr-gray-300);
-  --clr-500: var(--clr-gray-500);
-  --clr-cool-500: var(--clr-coolGray-500);
-  --clr-true-500: var(--clr-trueGray-500);
-  --clr-r-600: var(--clr-red-600);
-  --clr-b-600: var(--clr-blue-600);
-  --clr-900: var(--clr-gray-900);
+  --clr-primary: var(--clr-white);
+  --clr-secondary: var(--clr-gray);
+
+  /* Backgrounds */
+  --bg-primary: var(--clr-dark-gray);
+  --bg-secondary: var(--clr-lighter-gray);
+  --bg-accent: var(--clr-red);
+  --bg-accent-accent: var(--clr-black);
+  
 
   /* ============
      Typography 
@@ -35,20 +29,24 @@
   --ff: 'Inter', sans-serif;
 
   --fs-18: 1.125rem;
+  --fs-16: 1rem;
   --fs-14: 0.875rem;
+  --fs-13: 0.813rem;
   --fs-12: 0.75rem;
 
   --fw-400: 400;
-  --fw-500: 500;
+  --fw-700: 700;
 
   /* Font zises used */
-  --fs-primary: var(--fs-18);
-  --fs-secondary: var(--fs-14);
-  --fs-accent: var(--fs-12);
+  --fs-primary-contrast: var(--fs-18);
+  --fs-primary: var(--fs-14);
+  --fs-secondary: var(--fs-12);
+  --fs-accent: var(--fs-13);
+  --fs-accent-accent: var(--fs-16);
 
   /* Font weights used */
   --fw-regular: var(--fw-400);
-  --fw-medium: var(--fw-500);
+  --fw-semi-bold: var(--fw-700);
 }
 
 /** Reset Explained: https://piccalil.li/blog/a-modern-css-reset/  */
