@@ -7,6 +7,7 @@
   --clr-black: #000;
   --clr-gray: #AAAAAA;
   --clr-dark-gray: #181818;
+  --clr-medium-gray: #303030;
   --clr-lighter-gray: #121212;
   --clr-red:  #CC0000;
   
@@ -18,10 +19,11 @@
   /* Backgrounds */
   --bg-primary: var(--clr-dark-gray);
   --bg-secondary: var(--clr-lighter-gray);
+  --bg-break: var(--clr-medium-gray);
+
   --bg-accent: var(--clr-red);
   --bg-accent-accent: var(--clr-black);
   
-
   /* ============
      Typography 
      ============
@@ -135,30 +137,13 @@ button {
 */
 
 /** COLORS */
-.clr-100 {
-  color: var(--clr-100);
+.clr-primary {
+  color: var(--clr-primary);
 }
-.clr-200 {
-  color: var(--clr-200);
+.clr-secondary {
+  color: var(--clr-secondary);
 }
-.clr-300 {
-  color: var(--clr-300);
-}
-.clr-500 {
-  color: var(--clr-500);
-}
-.clr-cool-500 {
-  color: var(--clr-cool-500);
-}
-.clr-true-500 {
-  color: var(--clr-true-500);
-}
-.clr-b-600{
-  color: var(--clr-b-600);
-}
-.clr-900 {
-  color: var(--clr-900);
-}
+
 
 /** Font Family */
 .ff {
@@ -166,6 +151,9 @@ button {
 }
 
 /** Font-Size */
+.fs-primary-contrast {
+  font-size: var(--fs-primary-contrast);
+}
 .fs-primary {
   font-size: var(--fs-primary);
 }
@@ -175,9 +163,12 @@ button {
 .fs-accent {
   font-size: var(--fs-accent);
 }
+.fs-accent-accent {
+  font-size: var(--fs-accent-accent);
+}
 
 /** Font Weights  */
-.fw-medium {
+.fw-semi-bold {
   font-weight: var(--fw-medium);
 }
 .fw-regular {
@@ -185,40 +176,39 @@ button {
 }
 
 /** Backgrounds*/
-.bg-50 {
-  background: var(--clr-50);
+.bg-primary {
+  background: var(--bg-primary);
 }
-.bg-100 {
-  background: var(--clr-100);
+.bg-secondary {
+  background: var(--bg-secondary);
 }
-.bg-200 {
-  background: var(--clr-200);
+.bg-accent {
+  background: var(--bg-accent);
 }
-.bg-cool-500 {
-  background: var(--clr-cool-500);
-}
-.bg-r-600{
-  background: var(--clr-r-600);
+.bg-accent-accent {
+  background: var(--bg-accent-accent);
 }
 
-
-.btn-fit {
-  height: fit-content;
-  margin-block: auto;
+/** Borders */
+.bg-break{
+  background: (--bg-break);
+  height: 1px;
+  border: none;
 }
 
 /* ========================================= */
 body {
   font-family: var(--ff-body);
 }
-/** Borders */
-.br-200{
-  border: 1px solid var(--clr-true-200);
-}
 
 /** Other styles */
 .txt-cap {
   text-transform: uppercase;
+}
+
+.btn-fit {
+  height: fit-content;
+  margin-block: auto;
 }
 
 .flexy {
