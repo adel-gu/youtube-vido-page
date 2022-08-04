@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 /*! Custom Property */
 :root {
   /*! Value Collections */
@@ -28,7 +30,7 @@
      Typography 
      ============
   */
-  --ff: 'Inter', sans-serif;
+  --ff: 'Roboto', sans-serif;
 
   --fs-18: 1.125rem;
   --fs-16: 1rem;
