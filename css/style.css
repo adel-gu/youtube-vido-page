@@ -19,9 +19,9 @@
   --clr-raisin-black-21: var(--clr-gray-21);
   --clr-dark-gray-aa: var(--clr-gray-AA);
   --clr-eerie-black-18: var(--clr-gray-18);
-  --clr-dark-charcoal: var(--clr-gray-30);
+  --clr-dark-charcoal-30: var(--clr-gray-30);
   --clr-chinese-black-12: var(--clr-gray-12);
-  --clr-boston-univ-red: var(--clr-red);
+  --clr-boston-red-cc: var(--clr-red);
 
   
   /* ============
@@ -157,6 +157,34 @@ button {
 }
 .fw-regular-400 {
   font-weight: var(--fw-400);
+}
+
+/*! Backgrounds */
+.bg-raisin-21 {
+  background: var(--clr-raisin-black-21);
+}
+.bg-chinese-12 {
+  background: var(--clr-chinese-black-12);
+}
+.bg-charcoal-30 {
+  background: var(--clr-dark-charcoal-30);
+}
+.bg-black {
+  background: var(--clr-black-00);
+}
+.bg-eerie-18 {
+  background: var(--clr-eerie-black-18);
+}
+.bg-boston-red {
+  background: var(--clr-boston-red-cc);
+}
+
+/*! Borders */
+.br-charcoal-30 {
+  border: 1px solid var(--clr-dark-charcoal-30);
+}
+.br-dark-gray-aa {
+  border: 1px solid var(--clr-dark-gray-aa);
 }
 
 /* ========================================= */
