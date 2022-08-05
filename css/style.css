@@ -221,13 +221,14 @@ button {
 /*! Header */
 .header{
   justify-content: space-between;
-  padding: 0.5em 1.5em 0.5em calc(1.5em - 0.8125em);
+  padding: 0.5em 1em;
 }
 
 /*! Left */
 .menu-btn {
   margin-right: 1.5em;
-  padding: 0.8125em 0.708125em;
+  padding-inline: 0.75em;
+  height: 100%;
 }
 
 /*! Tools */
@@ -270,13 +271,23 @@ input[type="text"].br-charcoal-30 {
 }
 
 /*! Right  */
-.video-add-btn {
-  padding: 0.375em 0.1875em;
+.right button {
+  margin-left: 0.5em;
+  padding-inline: 0.75em;
+  height: 100%;
+}
+.right button:first-of-type {
+  margin-left: 0;
 }
 
-.notification-btn {
-  margin-inline: 1.5em;
+.video-add-btn img{
+  padding: 0.3125em 0.125em;
+}
+.apps-btn img{
   padding: 0.25em;
+}
+.notification-btn img{
+  padding: 0.125em 0.25em;
 }
 
 /*!===================================  */
