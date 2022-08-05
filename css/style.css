@@ -3,26 +3,28 @@
 /*! Custom Property */
 :root {
   /* COLORS */
-  --clr-white: #FFFFFF;
-  --clr-black: #000;
-  --clr-gray-21: #212121;
-  --clr-gray-AA: #AAAAAA;
-  --clr-gray-18: #181818;
-  --clr-gray-30: #303030;
+  --clr-black-0f: #0F0F0F;
   --clr-gray-12: #121212;
+  --clr-gray-30: #303030;
+  --clr-gray-21: #212121;
+  --clr-black: #000;
+  --clr-white: #FFFFFF;
+  --clr-gray-AA: #AAAAAA;
   --clr-red:  #CC0000;
   
+  /* --clr-gray-18: #181818; */
 
   /* Colors Specifications*/
-  --clr-white-ff: var(--clr-white);
-  --clr-black-00: var(--clr-black);
-  --clr-raisin-black-21: var(--clr-gray-21);
-  --clr-dark-gray-aa: var(--clr-gray-AA);
-  --clr-eerie-black-18: var(--clr-gray-18);
-  --clr-dark-charcoal-30: var(--clr-gray-30);
+  --clr-smoky-0f: var(--clr-black-0f);
   --clr-chinese-black-12: var(--clr-gray-12);
+  --clr-dark-charcoal-30: var(--clr-gray-30);
+  --clr-raisin-black-21: var(--clr-gray-21);
+  --clr-black-00: var(--clr-black);
+  --clr-white-ff: var(--clr-white);
+  --clr-dark-gray-aa: var(--clr-gray-AA);
   --clr-boston-red-cc: var(--clr-red);
-
+  
+  /* --clr-eerie-black-18: var(--clr-gray-18); */
   
   /* ============
      Typography 
@@ -160,8 +162,8 @@ button {
 }
 
 /*! Backgrounds */
-.bg-raisin-21 {
-  background: var(--clr-raisin-black-21);
+.bg-smoky-0f {
+  background: var(--clr-smoky-0f);
 }
 .bg-chinese-12 {
   background: var(--clr-chinese-black-12);
@@ -169,12 +171,18 @@ button {
 .bg-charcoal-30 {
   background: var(--clr-dark-charcoal-30);
 }
+.bg-raisin-21 {
+  background: var(--clr-raisin-black-21);
+}
 .bg-black {
   background: var(--clr-black-00);
 }
-.bg-eerie-18 {
-  background: var(--clr-eerie-black-18);
+.bg-dark-gray-aa {
+  background: var(--clr-dark-gray-aa);
 }
+/* .bg-eerie-18 {
+  background: var(--clr-eerie-black-18);
+} */
 .bg-boston-red {
   background: var(--clr-boston-red-cc);
 }
@@ -187,6 +195,11 @@ button {
   border: 1px solid var(--clr-dark-gray-aa);
 }
 
+/*! Separator */
+.separator {
+  border: none;
+  height: 1px;
+}
 /* ========================================= */
 
 /** Other styles */
@@ -233,10 +246,17 @@ button {
   width: 100%;
 }
 
+input[type="text"].bg-chinese-12 {
+  background: var(--clr-chinese-black-12);
+}
+input[type="text"].br-charcoal-30 {
+  border: 1px solid var(--clr-dark-charcoal-30);
+}
+
 .search-bar input::placeholder{
-  color: var(--clr-300);
-  font-size: var(--fs-secondary);
-  font-weight: var(--fw-regular);
+  color: var( --clr-dark-gray-aa);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-400);
 }
 
 .search-btn {
