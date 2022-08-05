@@ -199,7 +199,9 @@ button {
 .separator {
   border: none;
   height: 1px;
+  margin-block: 1.25em;
 }
+
 /* ========================================= */
 
 /** Other styles */
@@ -309,7 +311,7 @@ main {
 /*! Current Video Details  */
 .video-details {
   padding-top: 1.5em;
-  padding-bottom: 1em;
+  /* padding-bottom: 1em; */
 }
 
 /*! Views Details and User Interection buttons */
@@ -341,12 +343,57 @@ li span {
   margin-inline: 0.125em;
 }
 
-/*!============================= */
-/*! Bottom Section Layout*/
-.bottom-section {
-  padding-top: 1em;
+/*! comment section  */
+.sort-container {
+  padding-bottom: 1.25em;
+}
+.comment-txt {
+  margin-right: 1.75em;
+}
+.sort-btn img{
+  margin-right: 0.5em;
 }
 
+.user-comment {
+  padding-bottom: 2em;
+}
+
+.user-comment button{
+  justify-content: start;
+  height: fit-content;
+}
+.comment {
+  padding-left: 1em;
+  width: 100%;
+}
+input[type="text"].comment-input {
+  border: none;
+  background: none;
+  border-bottom: 1px solid  var(--clr-dark-charcoal-30);
+  width: 100%;
+}
+
+.comment-interaction {
+  margin-top: 0.5em;
+}
+.comment-interaction ul li {
+  align-items: center;
+  margin-right: 0.5em;
+}
+.comment-interaction ul li button {
+  padding: 0.625em;
+}
+.comment-interaction ul li span {
+  margin-left: 0;
+}
+.comment-interaction ul li a {
+  padding: 0 0.5em;
+  text-align: center;
+}
+
+/*!============================= */
+
+/*! Bottom Section Layout*/
 /*! Col 2 */
 .col2 {
   width: 75%;
