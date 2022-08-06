@@ -460,3 +460,13 @@ h4 {
 .item-container__info {
   padding-left: .5em;
 }
+
+
+
+/*!interactions */
+button:hover{
+  cursor: pointer;
+}
+.item-container:hover {
+  cursor: pointer;
+}
