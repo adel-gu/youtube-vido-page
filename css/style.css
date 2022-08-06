@@ -137,6 +137,9 @@ button {
 .fc-dark-gray {
   color: var(--clr-dark-gray-aa);
 }
+.fc-black {
+  color: var(--clr-black-00);
+}
 
 .fs-18 {
   font-size: var(--fs-18);
@@ -162,6 +165,9 @@ button {
 }
 
 /*! Backgrounds */
+.bg-white {
+  background: var(--clr-white-ff);
+}
 .bg-smoky-0f {
   background: var(--clr-smoky-0f);
 }
@@ -180,9 +186,7 @@ button {
 .bg-dark-gray-aa {
   background: var(--clr-dark-gray-aa);
 }
-/* .bg-eerie-18 {
-  background: var(--clr-eerie-black-18);
-} */
+
 .bg-boston-red {
   background: var(--clr-boston-red-cc);
 }
@@ -202,10 +206,11 @@ button {
   margin-block: 1.25em;
 }
 
-/* ========================================= */
-
-/** Other styles */
+/* !Other styles */
 .txt-cap {
+  text-transform: capitalize;
+}
+.txt-upper {
   text-transform: uppercase;
 }
 
@@ -217,6 +222,7 @@ button {
 .flexy {
   display: flex;
 }
+
 /* ========================================= */
 /*! ========== Layout ============  */
 
@@ -343,7 +349,7 @@ li span {
   margin-inline: 0.125em;
 }
 
-/*! comment section  */
+/* !comment section  */
 .sort-container {
   padding-bottom: 1.25em;
 }
@@ -355,7 +361,7 @@ li span {
 }
 
 .user-comment {
-  padding-bottom: 2em;
+  padding-bottom: 1.5em;
 }
 
 .user-comment button{
@@ -422,6 +428,31 @@ aside {
 }
 h4 {
   margin-right: 0.25em;
+}
+.sugg-container {
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+}
+.sugg-list {
+  align-items: center;
+  width: 200%;
+  position: absolute;
+}
+
+.sugg-btn {
+  border-radius: 2em;
+  padding: 0.5em 0.75em;
+  margin-right: 0.5em;
+}
+.sugg-spectial::after {
+  content: '';
+  width: 50px;
+  height: 40px;
+  background: linear-gradient(to right, transparent, #0F0F0F);
+  position: absolute;
+  top: 0;
+  left: 45%;
 }
 .video-item {
   padding-bottom: 0.5em;
