@@ -5,7 +5,7 @@ Following up the Microverse mini-botcamp to join the coming classes **_15-08_** 
 If you want to see an online preview use this [Demo](https://adel-gu.github.io/youtube-vido-page/) link.
 ## Process
 
-Because we always have to ==**trust the process**==, and actually this is what makes building this project so fun and a good learning opportunity is the following steps :
+Because we always have to `trust the process`, this is what makes building this project so fun and a good learning opportunity is the following steps :
 
 - **Build up the custom properties :**  this will make the project easy to work with and easy to maintain in the future, by declaring CSS variables.
 So a good start on this is to start collecting the different colors used, Font-types, Font-sizes, Font-weights and any design pattern that is repeating a lot in the design system.
