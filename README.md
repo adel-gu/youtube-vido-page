@@ -14,7 +14,7 @@ Those will make the work flow so straight forward, by creating classes for the f
 - **The Actual classes :** Now and only now you can start getting the big picture and start thinking about the project layout and how you can achieve it, so and advice is **USE A LOT OF FLEX BOX** trust me 😁.
 
 ## Struggle and challenges 
-Somehow this will be weird because the only thing I struggle and get  frustrated with most of the time is the naming convention for classesand variables 😥, yes this was so hard to deal with.
+Somehow this will be weird because the only thing I struggle and get  frustrated with most of the time is the naming convention for classes and variables 😥, yes this was so hard to deal with.
 
 ## Useful Links they might be helpful
 - For better naming convention of color variables I used the name color plus the first to chars from the HEX code, so this link will be useful for picking colors names  [color-name](https://www.color-name.com/).
